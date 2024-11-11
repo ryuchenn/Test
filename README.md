@@ -4,20 +4,23 @@ This project uses a model trained with rear license plates from Ontario, Canada,
 
 - License Plate Detection
 <div align="center">
-    <img src="github/1.gif" alt=“LicensePlate” />
+    <img src="github/1.gif" alt=“LicensePlate” height="400" width="600" />
 </div>
 
 - Search and Checkout Interface
 <div align="center">
-    <img src="github/2.gif" alt=“Search” />
+    <img src="github/2.gif" alt=“Search” height="400" width="600"/>
 </div>
 
 ## Get Started
 The `YOLO` model was trained with `Python` for object detection, and the trained model is loaded onto an `Android` interface to detect license plates and license plate numbers. The detected license plate images and numbers are processed via `Node.js` and added to `MongoDB`.
 1. Data Collection and Preprocessing
+
 Data was collected using a Canon R6 and an iPhone XR (all photos taken in landscape orientation). The images were adjusted to 640x640 pixels using `Lightroom`, and quality was reduced to accelerate model training.
 2. Data Labeling([CVAT](https://github.com/cvat-ai/cvat), [Label Studio](https://github.com/HumanSignal/labelImg)....)
-3. Model Training ([YOLOv11](https://github.com/ultralytics/ultralytics))
+
+Export to YOLO format
+3. Model Training uses Python ([YOLOv11](https://github.com/ultralytics/ultralytics))
 4. MongoDB Create & Setting
 5. Backend Setting (`.env`)
     ```
@@ -28,6 +31,7 @@ Data was collected using a Canon R6 and an iPhone XR (all photos taken in landsc
     DB_DEFAULT_PORT=3005
     ```
 6. Android Setting
+    
     `gradle.properties`
     ```
     Backend_URL=Backend_URL = http://YourIPAddress:Port/api/
