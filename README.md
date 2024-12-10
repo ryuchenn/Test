@@ -5,7 +5,7 @@
 This Android application is a simple bookstore inventory management tool built with `Kotlin` and `Room database`. The app allows users to add, view, update, and delete of books in a persistent database.
 
 <div align="center">
-    <img src="github/first.png" alt=“Home” style="width: 20%; height: auto;"/>
+    <img src="github/first.png" alt=“Home” style="width: 35%; height: auto;"/>
 </div>
 
 ---
